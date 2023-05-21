@@ -86,3 +86,19 @@ confirmarInput.addEventListener('keyup', () => {
     confirmarLabel.setAttribute('style', 'color: green;');
   }
 });
+
+
+
+//Dark Mode
+const body = document.querySelector('body');
+const btnDarkMode = document.querySelector('#btn-dark-mode');
+
+btnDarkMode.addEventListener('click', () => {
+  if(body.getAttribute('style') == 'background-color: #000;'){
+    body.removeAttribute('style');
+    btnDarkMode.innerHTML = 'Dark Mode';  
+  } else {
+    body.setAttribute('style', 'background-color: #000;');
+    btnDarkMode.innerHTML = 'Light Mode';
+  }
+});
