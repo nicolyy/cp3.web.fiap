@@ -14,8 +14,6 @@ const senhaInput = document.querySelector('.senha-container input');
 const confirmarLabel = document.querySelector('.confirmacao-container label');
 const confirmarInput = document.querySelector('.confirmacao-container input');
 
-console.log(confirmarInput)
-
 //Required Primeiro Nome
 primeiroNomeInput.setAttribute('required', '');
 //Required Segundo Nome
@@ -87,7 +85,39 @@ confirmarInput.addEventListener('keyup', () => {
   }
 });
 
+//Div de Status
+const divStatus = document.querySelector('.status-info');
 
+//Validação Ativa
+addEventListener('click', (e) => {
+  if(e.target.id == 'btnSubmit') {
+    //Primeiro Nome
+    if(primeiroNomeInput.value.length < 5 || primeiroNomeInput.value == '') {
+      divStatus.setAttribute('style', 'color: red;');
+      divStatus.innerHTML = '<span><strong>Campo "Primeiro nome" com menos de 5 caracteres ou vazio!</strong></span>';
+
+    //Segundo Nome
+    } else if (segundoNomeInput.value.length < 5 || segundoNomeInput.value == '') {
+      divStatus.setAttribute('style', 'color: red;');
+      divStatus.innerHTML = '<span><strong>Campo "Segundo nome" com menos de 5 caracteres ou vazio!</strong></span>';
+    //Email  
+    } else if (emailInput.value.length < 5 || emailInput.value.includes('@') == false || emailInput.value == '') {
+      divStatus.setAttribute('style', 'color: red;');
+      divStatus.innerHTML = '<span><strong>Campo "Email" com menos de 5 caracteres, sem @ ou vazio!</strong></span>';
+    //Senha
+    } else if (senhaInput.value.length < 6 || senhaInput.value == '') {
+      divStatus.setAttribute('style', 'color: red;');
+      divStatus.innerHTML = '<span><strong>Campo "Senha" com menos de 6 caracteres ou vazio!</strong></span>';
+    //Confirmar Senha
+    } else if (senhaInput.value != confirmarInput.value || confirmarInput.value == '') {
+      divStatus.setAttribute('style', 'color: red;');
+      divStatus.innerHTML = '<span><strong>Senhas não conferem!</strong></span>';
+    } else {
+      divStatus.setAttribute('style', 'color: green;');
+      divStatus.innerHTML = '<span><strong>Todas as informações conferem!</strong></span>'
+    }
+  }
+});
 
 //Dark Mode
 const body = document.querySelector('body');
