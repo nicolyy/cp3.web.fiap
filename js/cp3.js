@@ -104,6 +104,13 @@ addEventListener('click', (e) => {
     } else if (emailInput.value.length < 5 || emailInput.value.includes('@') == false || emailInput.value == '') {
       divStatus.setAttribute('style', 'color: red;');
       divStatus.innerHTML = '<span><strong>Campo "Email" com menos de 5 caracteres, sem @ ou vazio!</strong></span>';
+    //Senha
+    } else if (senhaInput.value.length < 6 || senhaInput.value == '') {
+      divStatus.setAttribute('style', 'color: red;');
+      divStatus.innerHTML = '<span><strong>Campo "Senha" com menos de 6 caracteres ou vazio!</strong></span>';
+    //Confirmar Senha
+    } else if () {
+      
     }
   }
 });
