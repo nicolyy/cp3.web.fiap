@@ -112,7 +112,9 @@ addEventListener('click', (e) => {
     } else if (senhaInput.value != confirmarInput.value || confirmarInput.value == '') {
       divStatus.setAttribute('style', 'color: red;');
       divStatus.innerHTML = '<span><strong>Senhas não conferem!</strong></span>';
-
+    } else {
+      divStatus.setAttribute('style', 'color: green;');
+      divStatus.innerHTML = '<span><strong>Todas as informações conferem!</strong></span>'
     }
   }
 });
