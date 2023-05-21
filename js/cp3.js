@@ -119,13 +119,6 @@ addEventListener('click', (e) => {
   }
 });
 
-
-
-
-
-
-
-
 //Dark Mode
 const body = document.querySelector('body');
 const btnDarkMode = document.querySelector('#btn-dark-mode');
