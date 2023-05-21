@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <script src="./js/cp3.js" defer></script>
+  <!-- MUDAR TITLE -->
+  <title>Document</title>
+</head>
+<body>
+  <header class="header-container">
+    <!-- Edita -->
+    <img class="img-header" src="#" alt="Escolhe uma img nick">
+    <h1 class="title-header">Cadastro</h1>
+  </header>
+  <main class="main-container">
+    <form class="main-form" method="get">
+      <fieldset class="main-fieldset">
+        <legend>Efetue seu cadastro</legend>
+        <div class="primeiro-nome-container">
+          <label for="idPrimeiroNome">Primeiro Nome:</label>
+          <input type="text" name="primeiroNome" id="idPrimeiroNome" placeholder="Primeiro nome">
+        </div>
+        <div class="segundo-nome-container">
+          <label for="idSegundoNome">Segundo Nome:</label>
+          <input type="text" name="segundoNome" id="idSegundoNome" placeholder="Segundo nome">
+        </div>
+        <div class="email-container">
+          <label for="idEmail">Email:</label>
+          <input type="email" name="email" id="idEmail" placeholder="email@exemplo.com.br">
+        </div>
+        <div class="senha-container">
+          <label for="idSenha">Senha:</label>
+          <input type="password" name="senha" id="idSenha" placeholder="Digite sua senha">
+        </div>
+        <div class="confirmacao-container">
+          <label for="idConfirmacao">Confirmação de Senha:</label>
+          <input type="password" name="confirmacao" id="idConfirmacao" placeholder="Confirme sua senha">
+        </div>
+        <div class="btn-container">
+          <button type="button" id="btnSubmit">Enviar</button>
+          <button type="reset" id="btnLimpar">Limpar</button>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>
