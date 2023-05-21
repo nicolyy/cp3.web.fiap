@@ -109,8 +109,10 @@ addEventListener('click', (e) => {
       divStatus.setAttribute('style', 'color: red;');
       divStatus.innerHTML = '<span><strong>Campo "Senha" com menos de 6 caracteres ou vazio!</strong></span>';
     //Confirmar Senha
-    } else if () {
-      
+    } else if (senhaInput.value != confirmarInput.value || confirmarInput.value == '') {
+      divStatus.setAttribute('style', 'color: red;');
+      divStatus.innerHTML = '<span><strong>Senhas não conferem!</strong></span>';
+
     }
   }
 });
