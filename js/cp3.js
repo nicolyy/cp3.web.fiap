@@ -95,7 +95,6 @@ addEventListener('click', (e) => {
     if(primeiroNomeInput.value.length < 5 || primeiroNomeInput.value == '') {
       divStatus.setAttribute('style', 'color: red;');
       divStatus.innerHTML = '<span><strong>Campo "Primeiro nome" com menos de 5 caracteres ou vazio!</strong></span>';
-
     //Segundo Nome
     } else if (segundoNomeInput.value.length < 5 || segundoNomeInput.value == '') {
       divStatus.setAttribute('style', 'color: red;');
@@ -120,16 +119,29 @@ addEventListener('click', (e) => {
 });
 
 //Dark Mode
+//Get Body
 const body = document.querySelector('body');
 const btnDarkMode = document.querySelector('#btn-dark-mode');
+//Get title-header
+const titleHeader = document.querySelector('.title-header');
+//Get btnSubmit
+const btnSubmit = document.querySelector('#btnSubmit');
+//Get btnLimpar
+const btnLimpar = document.querySelector('#btnLimpar');
 
+//Function Dark Mode
 btnDarkMode.addEventListener('click', () => {
-  if(body.getAttribute('style') == 'background-color: #000;'){
+  if(body.getAttribute('style') == 'background-color: #16161d;'){
     body.removeAttribute('style');
+    titleHeader.removeAttribute('style');
+    btnSubmit.removeAttribute('style');
+    btnLimpar.removeAttribute('style');
     btnDarkMode.innerHTML = 'Dark Mode';  
   } else {
-    body.setAttribute('style', 'background-color: #000;');
+    body.setAttribute('style', 'background-color: #16161d;');
+    titleHeader.setAttribute('style', 'color: #16161d;');
+    btnSubmit.setAttribute('style', 'background-color: #16161d; border-color: #16161d;');
+    btnLimpar.setAttribute('style', 'color: #16161d; border-color: #16161d;');
     btnDarkMode.innerHTML = 'Light Mode';
-    
   }
 });
