@@ -135,6 +135,7 @@ btnDarkMode.addEventListener('click', () => {
     body.removeAttribute('style');
     titleHeader.removeAttribute('style');
     btnSubmit.removeAttribute('style');
+    btnLimpar.removeAttribute('style');
     btnDarkMode.innerHTML = 'Dark Mode';  
   } else {
     body.setAttribute('style', 'background-color: #16161d;');
