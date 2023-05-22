@@ -6,20 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/index.css" />
   <script src="./js/cp3.js" defer></script>
-  <!-- MUDAR TITLE -->
-  <title>Document</title>
+  <title>Cadastro</title>
 </head>
 <body>
   <header class="header-container">
+    <!--Botão darkmode-->   
     <button id="btn-dark-mode">Dark Mode</button>
-    <!-- Edita -->
   </header>
 
 
   <main class="main-container">
     <h1 class="title-header">Cadastro</h1>
     <form class="main-form" method="get" onsubmit="return false">
-     <!-- <fieldset class="main-fieldset"> -->
+      <!--Criando sessão para cadastro-->
         <!-- <legend>Efetue seu cadastro</legend>-->
         <div class="primeiro-nome-container">
           <label for="idPrimeiroNome">Primeiro Nome:</label>
@@ -42,11 +41,12 @@
           <input type="password" name="confirmacao" id="idConfirmacao" placeholder="Confirme sua senha">
         </div>
         <div class="btn-container">
+          <!--Criando Botão de enviar-->
           <button type="submit" id="btnSubmit">Enviar</button>
+          <!--Criando Botão limpar-->
           <button type="reset" id="btnLimpar">Limpar</button>
         </div>
         <div class="status-info"></div>
-      <!--</fieldset> -->
     </form>
   </main>
 </body>
