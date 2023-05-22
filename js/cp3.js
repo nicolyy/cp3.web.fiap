@@ -144,6 +144,5 @@ btnDarkMode.addEventListener('click', () => {
     btnSubmit.setAttribute('style', 'background-color: #16161d; border-color: #16161d;');
     btnLimpar.setAttribute('style', 'color: #16161d; border-color: #16161d;');
     btnDarkMode.innerHTML = 'Light Mode';
-    
   }
 });
