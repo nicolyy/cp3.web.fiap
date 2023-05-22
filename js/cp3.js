@@ -127,6 +127,7 @@ const btnDarkMode = document.querySelector('#btn-dark-mode');
 const titleHeader = document.querySelector('.title-header');
 //Get btnSubmit
 const btnSubmit = document.querySelector('#btnSubmit');
+//Get btnLimpar
 
 btnDarkMode.addEventListener('click', () => {
   if(body.getAttribute('style') == 'background-color: #16161d;'){
