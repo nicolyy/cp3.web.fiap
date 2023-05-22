@@ -133,6 +133,7 @@ btnDarkMode.addEventListener('click', () => {
     btnDarkMode.innerHTML = 'Dark Mode';  
   } else {
     body.setAttribute('style', 'background-color: #16161d;');
+    titleHeader.setAttribute('style', 'color: #16161d;');
     btnDarkMode.innerHTML = 'Light Mode';
     
   }
