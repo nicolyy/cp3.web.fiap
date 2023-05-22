@@ -52,4 +52,15 @@ input{
 
     width: 60%;
     height: 2.5rem;
+
 }
+
+input::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+}
+
+input:invalid{
+    border: 0.1 solid #2E2EFE
+}
+
