@@ -140,6 +140,7 @@ btnDarkMode.addEventListener('click', () => {
     body.setAttribute('style', 'background-color: #16161d;');
     titleHeader.setAttribute('style', 'color: #16161d;');
     btnSubmit.setAttribute('style', 'background-color: #16161d; border-color: #16161d;');
+    btnLimpar.setAttribute('style', 'color: #16161d; border-color: #16161d;');
     btnDarkMode.innerHTML = 'Light Mode';
     
   }
