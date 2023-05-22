@@ -1,0 +1,33 @@
+body{
+    background-color: #2E2EFE;
+  
+}
+
+h1{
+    color: #2E2EFE;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+
+.main-container{
+    background-color: #ffffff;
+    width: 500px;
+    height: 570px;
+    border-radius: 10px;
+    
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+
+    
+}
+
+.main-form{
+    
+    text-align: center
+}
+

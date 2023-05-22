@@ -130,5 +130,6 @@ btnDarkMode.addEventListener('click', () => {
   } else {
     body.setAttribute('style', 'background-color: #000;');
     btnDarkMode.innerHTML = 'Light Mode';
+    
   }
 });
