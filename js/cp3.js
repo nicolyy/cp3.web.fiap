@@ -95,7 +95,6 @@ addEventListener('click', (e) => {
     if(primeiroNomeInput.value.length < 5 || primeiroNomeInput.value == '') {
       divStatus.setAttribute('style', 'color: red;');
       divStatus.innerHTML = '<span><strong>Campo "Primeiro nome" com menos de 5 caracteres ou vazio!</strong></span>';
-
     //Segundo Nome
     } else if (segundoNomeInput.value.length < 5 || segundoNomeInput.value == '') {
       divStatus.setAttribute('style', 'color: red;');
