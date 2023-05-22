@@ -63,9 +63,15 @@ input::placeholder{
 input:invalid{
     border: 0.1 solid #2E2EFE
 }
+
+
 .main-fieldset{
     background-color: #ffffff;
     
   
+}
+
+div{
+    margin-top: 2%;
 }
 
