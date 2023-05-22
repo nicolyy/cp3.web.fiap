@@ -123,6 +123,9 @@ addEventListener('click', (e) => {
 //Get Body
 const body = document.querySelector('body');
 const btnDarkMode = document.querySelector('#btn-dark-mode');
+//Get title-header
+const titleHeader = document.querySelector('.title-header');
+
 
 btnDarkMode.addEventListener('click', () => {
   if(body.getAttribute('style') == 'background-color: #000;'){
