@@ -128,11 +128,11 @@ const titleHeader = document.querySelector('.title-header');
 
 
 btnDarkMode.addEventListener('click', () => {
-  if(body.getAttribute('style') == 'background-color: #000;'){
+  if(body.getAttribute('style') == 'background-color: #16161d;'){
     body.removeAttribute('style');
     btnDarkMode.innerHTML = 'Dark Mode';  
   } else {
-    body.setAttribute('style', 'background-color: #000;');
+    body.setAttribute('style', 'background-color: #16161d;');
     btnDarkMode.innerHTML = 'Light Mode';
     
   }
