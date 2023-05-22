@@ -130,6 +130,7 @@ const btnSubmit = document.querySelector('#btnSubmit');
 //Get btnLimpar
 const btnLimpar = document.querySelector('#btnLimpar');
 
+//Function Dark Mode
 btnDarkMode.addEventListener('click', () => {
   if(body.getAttribute('style') == 'background-color: #16161d;'){
     body.removeAttribute('style');
