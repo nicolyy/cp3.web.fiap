@@ -125,15 +125,19 @@ const body = document.querySelector('body');
 const btnDarkMode = document.querySelector('#btn-dark-mode');
 //Get title-header
 const titleHeader = document.querySelector('.title-header');
-
+//Get btnSubmit
+const btnSubmit = document.querySelector('#btnSubmit');
 
 btnDarkMode.addEventListener('click', () => {
   if(body.getAttribute('style') == 'background-color: #16161d;'){
     body.removeAttribute('style');
+    titleHeader.removeAttribute('style');
+    btnSubmit.removeAttribute('style');
     btnDarkMode.innerHTML = 'Dark Mode';  
   } else {
     body.setAttribute('style', 'background-color: #16161d;');
     titleHeader.setAttribute('style', 'color: #16161d;');
+    btnSubmit.setAttribute('style', 'background-color: #16161d; border-color: #16161d;');
     btnDarkMode.innerHTML = 'Light Mode';
     
   }
